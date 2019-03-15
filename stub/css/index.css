@@ -1,0 +1,33 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+                                 
+.main-container-div {
+    display: flex;
+    width: 100%;
+}
+
+.button2 {
+    background-color: #CFB53B;
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: 700;
+}
+
+.postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}

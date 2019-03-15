@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <div class="logo">
+            <h1>ScriBBler</h1>
+                <span>Explore, Imagine, Create</span>
+            </div>
+                <div class="buttons">
+                <button class="button1" id="sin" onclick="signIn()">Sign in</button>
+                <button class="button1" id="sup" onclick="signUp()">Sign up</button>
+                </div>
+            
+            
+        </div>
+
+<!--************************************************************************************************************************************* -->
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <a href="html/bloglist.html"><button class="button2">All Posts</button></a>
+                <button class="button2">Create Posts</button>
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <div id="sinModal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" onclick="closeSignIn()">&times;</span>
+            <h2><center>Welcome Back!</center></h2><hr>
+        </div>
+            
+            <div class="container">
+            <form>
+            <label for="uname">Username</label>
+            <input type="text" id="usname" placeholder="Enter Username" required>
+            <label for="Password">Password</label>
+            <input type="password" id="upass" placeholder="Enter Password" required>
+            <input type="submit" value="Sign In">
+            </form>
+             
+            </div>
+        <div class="model-footer">
+            <p><b><center>Not a member? <span id="signup2" style="color:blue;cursor:pointer" onclick="transfer()">Sign Up</span></center></b></p>    
+        </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div id="supModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close" onclick="closeSignUp()">&times;</span>
+                <h2><center>Get Started</center></h2>
+                    <hr>
+                </div>
+                <div class="container">
+            <form>
+                <label for="fname">Full Name</label>
+                <input type="text" id="name" placeholder="Enter Full Name" required>
+                <label for="uname">Username</label>
+                <input type="text" id="username" placeholder="Enter User Name" required>
+                <label for="password">Password</label>
+                <input type="password" id="pass" placeholder="Enter Password" required>
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="Cpass" placeholder="Confirm Password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
