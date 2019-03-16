@@ -1,10 +1,10 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 35%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 10px 7%;
     float:left;
     border-radius: 15px;
 }
@@ -19,7 +19,7 @@
         color: #000;
 }
 .post-content {
-        width: 75%;           
+        width: 100%;           
         display: table-cell;
         text-align: left;
         background-color: #E8E8E8;
@@ -33,6 +33,7 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+/*    padding:-2px;*/
     }
 .post-more {
     float: right;
@@ -44,8 +45,18 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
+/*
+    height: 8vh;
     margin-bottom: 0 !important;
+    overflow:hidden;
+*/
+    display: block;
+    height: 3.5em;
+    width: 100;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
 }
 
 body {
@@ -60,5 +71,64 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+.trash{
+    float:right;
+    cursor:pointer;
+    margin:10px 0px ;
+}
+
+
+.delete-modal{
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  font-family: "Abel";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.modal-delete{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  color: black;
+}
+
+.modal-delete p{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    padding:10px 50px;
+    margin: 0px 40px;
+    color:white;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-Yes{
+    background-color: #F5564A;
+}
+.btn-No{
+    background-color: #5EB762;
 }
