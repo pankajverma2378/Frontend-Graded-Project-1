@@ -1,0 +1,113 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    
+
+}
+.blogContent{
+    text-align: center;
+}
+
+.blogTitleTextarea {
+    font-size: 24px;
+    max-height: 30.4px;
+    width: 30%;
+    padding: 0px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #FFC0CB;
+}
+
+#blogTitleNew{
+    font-size: 24px;
+    max-height: 30.4px;
+    width: 30%;
+    padding: 0px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+/*    border: 2px solid #FFC0CB;*/
+}
+
+.blogBodyTextarea {
+    width: 100%;
+    height: 25.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    border: 2px solid #A6A9E5;
+}
+
+
+.btn-pink{
+    background-color: #EF3B65;
+    padding: 7px 15px;
+    color: white;
+}
+
+.btn-pink-like{
+    background-color: #EF3B65;
+    padding: 7px 30px;
+    color: white;
+    border-radius: 5px;
+}
+.btn-pink-comment{
+    background-color: #EF3B65;
+    padding: 7px 15px;
+    color: white;  
+}
+.container1{
+    padding: 0px 70px;
+}
+
+#like-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+#comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+#comment-section textarea {
+    width: 60%;
+    height: 5em;
+}
+#comment-section p {
+    font-weight: 600;
+}
+#comment-box {
+    background-color: #E2E4E6;
+    padding: 15px;
+    width: 59%;
+}
+.comment-blank {
+    padding: 0px;
+}
+.comment {
+    background-color: white;
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
