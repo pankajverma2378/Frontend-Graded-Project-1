@@ -43,8 +43,9 @@ function doComment(comment_textarea) {
         comment.innerHTML = txt;
         commentBox.insertBefore(comment, commentBox.firstChild);
         commentCount++;
-        console.log(comment);
-        showLikesComments();
+        //console.log(comment);
+        show();
+        comment_textarea.value = '';
     } else {
         alert("The comment field cannot be left empty!");
     }

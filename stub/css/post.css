@@ -1,7 +1,8 @@
-.blogTite {
+.blogTitle {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -21,7 +22,7 @@
 
 }
 .blogContent{
-    text-align: center;
+/*    text-align: center;*/
 }
 
 .blogTitleTextarea {
@@ -59,6 +60,8 @@
     background-color: #EF3B65;
     padding: 7px 15px;
     color: white;
+    border: 0px;
+    box-shadow: 0px 3px rgba(239,59,101,0.3);
 }
 
 .btn-pink-like{
