@@ -35,7 +35,7 @@
 
         	<!-- Insert code for All Posts & Create Post button here -->
             <a href="html/bloglist.html"><button class="button2">All Posts</button></a>
-                <button class="button2">Create Posts</button>
+                <button class="button2" onclick="createModal()">Create Posts</button>
         </div>
     </div>
 
@@ -97,6 +97,31 @@
     <div>
 
     	<!-- Insert code for Create Post modal here -->
+        <div id="createModal" class="modal">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <span class="close" onclick="hideCreateModal()">&times;</span>
+                    <h2><center>Create a new Post</center></h2>
+                    <hr>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                    <form id="create-form" action="#">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Enter the Title" required>
+                        
+                        <label for="postedBy">Posted by</label>
+                        <input type="text" id="postedBy" name="postedBy" placeholder="Enter the author" required>
+                        
+                        <label for="content">Content</label><br>
+                        <textarea id="content" name="content" placeholder="Description here..." rows="4" required></textarea>
+                    </form>
+                        <input type="submit" value="Add Post">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 

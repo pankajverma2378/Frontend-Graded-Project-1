@@ -31,3 +31,18 @@ body{
     align-items: center;
     height: 60vh;
 }
+
+#createModal textarea {
+    height: 10vh;
+    padding: 10px;
+    margin: 5px 0px 15px;
+    background-color: #F1F1F1;
+    color: #B6ABA4;
+    border: 0px;
+    font-family: 'Arial';
+/*    display: flex;*/
+    width:95%;
+}
+#createModal textarea:focus {
+    background-color: #DDDDDD;
+}

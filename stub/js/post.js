@@ -48,7 +48,7 @@ function doComment(comment_textarea) {
     } else {
         alert("The comment field cannot be left empty!");
     }
-    comment_textarea.value.display ="none";
+    
 }
 
 function edit() {
